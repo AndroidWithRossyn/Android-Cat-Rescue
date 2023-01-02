@@ -1,0 +1,30 @@
+html, body {
+  background: #333333;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto 1px auto;
+}
+
+@media (max-device-width: 8in), (max-device-height: 8in) {
+  html {
+    overflow: hidden;
+  }
+  html, body {
+    height: 100%;
+  }
+  #content {
+    height: 100%;
+    width: 100%;
+    margin: inherit;
+  }
+  .no-mobile {
+    display: none;
+  }
+}

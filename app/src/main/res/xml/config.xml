@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.company.game" version="1.0.0">
+    <name>game</name>
+    <description>
+        Great game rect max.
+    </description>
+    <author email="youremail@gmail.com" href="http://cordova.io">
+        Rect Max Deluxe
+    </author>
+    <content src="index.html" />
+	
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="market:*" />
+
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="29" />
+    <preference name="SplashScreenDelay" value="12000" />
+	<preference name="loadUrlTimeoutValue" value="700000" />
+
+	<feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+	<feature name="AdMob">
+        <param name="android-package" value="org.ratson.cordova.admob.AdMob" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />		
+    </feature>
+	
+	<splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+	<splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+	<splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+	<splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+
+    <splash src="res/screen/android/splash-port-hdpi.png" density="hdpi"/>
+    <splash src="res/screen/android/splash-port-ldpi.png" density="ldpi"/>
+    <splash src="res/screen/android/splash-port-mdpi.png" density="mdpi"/>
+    <splash src="res/screen/android/splash-port-xhdpi.png" density="xhdpi"/>
+
+</widget>
